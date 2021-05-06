@@ -4,14 +4,16 @@ body {
   background-color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 22px;
-  font-weight: 200;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .container {
   max-width: 80%;
   margin: 0 auto;
   border-bottom: 1px solid #111e27;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +30,6 @@ nav {
 }
 nav ul {
   list-style: none;
-
   display: flex;
   justify-content: space-around;
 }
@@ -46,6 +47,21 @@ nav ul li {
 }
 .slider-img:hover {
   opacity: 0.8;
+}
+.products-box {
+  padding-bottom: 20px;
+}
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products-container__product img {
+  width: 250px;
+  height: auto;
+}
+h4 {
+  font-weight: 300;
 }
 h3 {
   width: 95%;
@@ -71,6 +87,7 @@ h3 {
 .baner-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .baner-container .baner {
   width: 100%;
@@ -84,14 +101,14 @@ h3 {
   margin: 20px;
 }
 footer {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(34, 31, 31);
-    color: #fff;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(34, 31, 31);
+  color: #fff;
 }
 .footer-content {
-    height: 80%;
+  height: 80%;
   display: flex;
   align-items: center;
 }
@@ -112,5 +129,5 @@ h6 {
   margin-bottom: 0;
   left: 20px;
   bottom: 10px;
-  color:#aca9a9;
+  color: #aca9a9;
 }
