@@ -1,140 +1,6 @@
-@media screen and (min-width:768px) {
-
 body {
   margin: 0;
-  color: #111e27;
-  background-color: #fff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid #111e27;
-  margin-bottom: 30px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-#logo img {
-  width: 150px;
-  height: auto;
-  margin: 0 20px;
-}
-nav {
-  width: 70%;
-  align-items: center;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-nav ul li {
-  padding: 5px;
-  margin: 5px;
-  border-bottom: 1px solid #111e27;
- }
-.slider {
-  width: 100%;
-  margin: 0;
-}
-.slider-img {
-  width: 100%;
-}
-.slider-img:hover {
-  opacity: 0.8;
-}
-.products-box {
-  padding-bottom: 20px;
-}
-.products-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.products-container__product img {
-  width: 250px;
-  height: auto;
-  border-radius: 4px;
-}
-h3 {
-  width: 95%;
-  font-size: 22px;
-  margin: 50px auto;
-  text-align: center;
-  font-weight: normal;
-}
-.cta {
-  display: block;
-  width: 120px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 20px auto;
-}
-.cta:hover {
-  box-shadow: 2px 2px 1px 1px #aca9a9;
-  opacity: 0.8;
-}
-.baner-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-.baner-container .baner {
-  width: 100%;
-  height: auto;
-  box-shadow: 8px 8px 4px 4px #aca9a9;
-}
-.baner-container .baner:hover {
-  opacity: 0.8;
-}
-.baner-img {
-  margin: 20px;
-}
-footer {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(34, 31, 31);
-  color: #fff;
-}
-.footer-content {
-  height: 80%;
-  display: flex;
-  align-items: center;
-}
-.footer-container {
-  width: 50%;
-  margin: auto;
-  color: #fff;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-}
-h6 {
-  font-weight: 200;
-  position: absolute;
-  margin-bottom: 0;
-  left: 20px;
-  bottom: 10px;
-  color: #aca9a9;
-}
-}
-body {
-  margin: 0;
-  color: #111e27;
+  color: #000000;
   background-color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
@@ -143,15 +9,15 @@ body {
 }
 .container {
   width: 100%;
-  padding: .4em;
   border-bottom: 1px solid #111e27;
+  padding-bottom: 0.5em;
+}
+#logo {
+  width: 30%;
+  margin: 0 auto;
 }
 #logo img {
   width: 100%;
-}
-#logo {
-  width: 40%;
-  margin: 0 auto;
 }
 nav {
   width: 100%;
@@ -168,6 +34,9 @@ nav ul {
 .slider img {
   width: 100%;
 }
+h4 {
+  padding-left: 1em;
+}
 .products-container {
   margin-top: 1em;
   display: flex;
@@ -175,13 +44,14 @@ nav ul {
   flex-wrap: wrap;
 }
 .products-container__product {
-flex: 1 1 auto;
-margin-bottom: .5em;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  margin: 0.5em;
 }
 .products-container__product img {
-  border-radius: 4px;
-  width: 140px;
-} 
+  width: 130px;
+}
 .wide {
   width: 100%;
 }
@@ -193,24 +63,25 @@ h3 {
 }
 .cta {
   display: block;
-  width: 50%;
-  height: 4em;
+  padding: 1.5em;
   background-color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  margin: .5em auto;
+  margin: 0 auto;
 }
 .baner-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.baner-img {
-  margin: 1em auto;
+  padding-top: 1em;
 }
 .baner-container .baner {
   width: 280px;
   box-shadow: 4px 4px 2px 2px #aca9a9;
+}
+.baner-img {
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 footer {
   width: 100%;
@@ -236,4 +107,140 @@ footer ul {
   width: 100%;
   text-align: right;
   font-size: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    color: #000000;
+    background-color: #fff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #111e27;
+    margin-bottom: 2em;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #logo {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #logo img {
+    width: 100%;
+  }
+
+  nav {
+    width: 70%;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #111e27;
+  }
+  .slider {
+    width: 100%;
+    margin: 0;
+  }
+  .slider-img {
+    width: 100%;
+  }
+  .slider-img:hover {
+    opacity: 0.8;
+  }
+  .products-box {
+    padding-bottom: 20px;
+  }
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .products-container__product img {
+    width: 250px;
+    height: auto;
+    border-radius: 4px;
+  }
+  h3 {
+    width: 95%;
+    font-size: 22px;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: normal;
+  }
+  .cta {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px auto;
+  }
+  .cta:hover {
+    box-shadow: 2px 2px 1px 1px #aca9a9;
+    opacity: 0.8;
+  }
+  .baner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .baner-container .baner {
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 4px 4px #aca9a9;
+  }
+  .baner-container .baner:hover {
+    opacity: 0.8;
+  }
+  .baner-img {
+    margin: 20px;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(34, 31, 31);
+    color: #fff;
+  }
+  .footer-content {
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .footer-container {
+    width: 50%;
+    margin: auto;
+    color: #fff;
+  }
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  h6 {
+    font-weight: 200;
+    position: absolute;
+    margin-bottom: 0;
+    left: 20px;
+    bottom: 10px;
+    color: #aca9a9;
+  }
 }
