@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <title>ale_album</title>
   </head>
@@ -12,15 +12,27 @@
     <main>
       <div class="container">
         <header>
-          <div id="logo">
-            <img src="./assets/ale-album-removebg-preview.png" />
+          <div class="logo-container">
+            <div class="logo">
+              <img
+                class="logo__image"
+                src="./assets/ale-album-removebg-preview.png"
+              />
+            </div>
           </div>
+
           <nav>
-            <ul>
-              <a href="#"><li>home</li></a> 
-              <a href="jak-powstaje-album.html"><li>jak powstaje album</li></a>
-              <a href="o-ale-album.html"><li>o ale_album</li></a>
-            </ul>
+            <div class="menu">
+              <ul class="menu__list">
+                <a href="#"><li class="menu__item">home</li></a>
+                <a href="jak-powstaje-album.html"
+                  ><li class="menu__item">jak powstaje album</li></a
+                >
+                <a href="o-ale-album.html"
+                  ><li class="menu__item">o ale_album</li></a
+                >
+              </ul>
+            </div>
           </nav>
         </header>
       </div>
@@ -34,44 +46,60 @@
         </div>
       </div>
       <div class="container">
-        <h4>Nasze produkty</h4>
-        <div class="products-container">
-          <div class="products-container__product">
-            <img src="./assets/album.png" alt="Zdjęcie produktu- album">
+        <section class="products-section">
+          <h4>Nasze produkty</h4>
+          <div class="products-container">
+            <div class="product-container">
+              <div class="product-container__product">
+                <img src="./assets/album.png" alt="Zdjęcie produktu- album" />
+              </div>
+            </div>
+            <div class="product-container">
+              <div class="product-container__product">
+                <img src="./assets/album.png" alt="Zdjęcie produktu- album" />
+              </div>
+            </div>
+            <div class="product-container">
+              <div
+                class="product-container__product product-container--favorite"
+              >
+                <img src="./assets/album.png" alt="Zdjęcie produktu- album" />
+              </div>
+            </div>
+            <div class="product-container">
+              <div class="product-container__product">
+                <img src="./assets/album.png" alt="Zdjęcie produktu- album" />
+              </div>
+            </div>
           </div>
-          <div class="products-container__product">
-            <img src="./assets/album.png" alt="Zdjęcie produktu- album">
-          </div>
-          <div class="products-container__product">
-            <img src="./assets/album.png" alt="Zdjęcie produktu- album">
-          </div>
-          <div class="products-container__product">
-            <img src="./assets/album.png" alt="Zdjęcie produktu- album">
-          </div>
-        </div>
+        </section>
       </div>
       <div class="wide">
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquid
-          perferendis adipisci maiores laboriosam nulla reiciendis, nam optio,
-          exercitationem voluptates tempore laudantium blanditiis sit veniam
-          voluptatem nesciunt, sint quos ad. Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit.
-        </h3>
-        <button type="button" class="cta">Sprawdź</button>
+        <div class="seo-text">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            aliquid perferendis adipisci maiores laboriosam nulla reiciendis,
+            nam optio, exercitationem voluptates tempore laudantium blanditiis
+            sit veniam voluptatem nesciunt, sint quos ad. Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit.
+          </h3>
+        </div>
+        <div class="cta">
+          <button type="button" class="btn">Sprawdź</button>
+        </div>
       </div>
       <div class="container">
         <div class="baner-container">
-          <div class="baner-img">
+          <div class="baner">
             <img
-              class="baner"
+              class="baner__image"
               src="./assets/baner1.png"
               alt="Zobacz nasze wyjątkowe albumy"
             />
           </div>
-          <div class="baner-img">
+          <div class="baner">
             <img
-              class="baner"
+              class="baner__image"
               src="./assets/baner2.png"
               alt="Jak wygląda nasza pracownia"
             />
@@ -89,7 +117,7 @@
           </ul>
         </div>
       </div>
-      <h6 class='copy'>Copyright &copy </h6>
+      <h6 class="copy">Copyright &copy</h6>
     </footer>
   </body>
 </html>
