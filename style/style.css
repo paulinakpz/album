@@ -1,0 +1,266 @@
+/* colors: 
+#363636
+#242F40
+#CCA43B
+#E5E5E5
+#FFFFFF */
+
+body {
+  margin: 0;
+  color: #000000;
+  background-color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  body {
+    color: #000000;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+.container {
+  width: 100%;
+
+  border-bottom: 1px solid #111e27;
+  padding-bottom: 0.5em;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+#logo {
+  width: 30%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
+
+#logo img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #logo img {
+    width: 100%;
+  }
+}
+
+nav {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    width: 70%;
+    align-items: center;
+  }
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  nav ul li {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5em;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.slider {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.slider-img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .slider img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-img:hover {
+    opacity: 0.8;
+  }
+}
+
+h4 {
+  padding-left: 1em;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-box {
+    padding-bottom: 20px;
+  }
+}
+.products-container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .products-container {
+    justify-content: space-between;
+  }
+}
+.products-container__product {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  margin: 0.5em;
+}
+.products-container__product img {
+  width: 130px;
+}
+@media screen and (min-width: 768px) {
+  .products-container__product img {
+    width: 230px;
+  }
+}
+.wide {
+  width: 100%;
+}
+h3 {
+  width: 95%;
+  font-size: 1em;
+  margin: 1.5em auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+}
+.cta {
+  display: block;
+  padding: 1.5em;
+  background-color: #cca43b;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .cta {
+    border-radius: 1px;
+  }
+  .cta:hover {
+    box-shadow: 2px 2px 1px 1px #aca9a9;
+    opacity: 0.8;
+  }
+}
+
+.baner-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1em;
+}
+@media screen and (min-width: 768px) {
+  .baner-container {
+    flex-wrap: nowrap;
+  }
+}
+
+.baner-container .baner {
+  width: 280px;
+  box-shadow: 4px 4px 2px 2px #aca9a9;
+}
+@media screen and (min-width: 768px) {
+  .baner-container .baner {
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 4px 4px #aca9a9;
+  }
+  .baner-container .baner:hover {
+    opacity: 0.8;
+  }
+}
+
+.baner-img {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .baner-img {
+    margin: 2em;
+  }
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #242f40;
+  color: #fff;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 100px;
+  }
+}
+.footer-container {
+  width: 80%;
+  padding: 1em;
+  color: #fff;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-content {
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+.copy {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 0.6em;
+}
+@media screen and (min-width: 768px) {
+  .copy {
+    font-weight: 200;
+    color: #aca9a9;
+  }
+}
