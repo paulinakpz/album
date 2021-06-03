@@ -4,40 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <title>ale_album</title>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <header>
-          <div class="logo-container">
-            <div class="logo">
-              <img
-                class="logo__image"
-                src="./assets/ale-album-removebg-preview.png"
-              />
-            </div>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="./assets/ale-album-removebg-preview.png"
+            />
           </div>
-          <!-- TODO: adding hamburger menu -->
-          <nav>
-            <div class="menu">
-              <ul class="menu__list">
-                <a href="#"><li class="menu__item">home</li></a>
-                <a href="jak-powstaje-album.html"
-                  ><li class="menu__item">jak powstaje album</li></a
-                >
-                <a href="o-ale-album.html"
-                  ><li class="menu__item">o ale_album</li></a
-                >
-              </ul>
-            </div>
-          </nav>
-        </header>
-      </div>
-      <!-- TODO: adjust the size of the slider -->
-      <div class="slider">
+        </div>
+        <nav>
+          <div class="menu">
+            <ul class="menu__list">
+              <a href="#"><li class="menu__item">home</li></a>
+              <a href="jak-powstaje-album.html"
+                ><li class="menu__item">jak powstaje album</li></a
+              >
+              <a href="o-ale-album.html"
+                ><li class="menu__item">o ale_album</li></a
+              >
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- <div class="slider">
         <div>
           <img
             class="slider-img"
@@ -45,7 +48,59 @@
             alt="Niepowtarzalne albumy"
           />
         </div>
+      </div> -->
+    <!-- slider -->
+    <main>
+      <div class="slider">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/slajder1.png"
+                class="d-block w-100"
+                alt="Niepowtarzalne albumy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slajder1.png"
+                class="d-block w-100"
+                alt="Niepowtarzzalne albumy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slajder1.png"
+                class="d-block w-100"
+                alt="Niepowtarzalne albumy"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+      <!-- end of slider  -->
       <div class="container">
         <section class="products-section">
           <h4>Nasze produkty</h4>
@@ -87,7 +142,9 @@
           </h3>
         </div>
         <div class="cta">
-          <button type="button" class="btn">Sprawdź</button>
+          <button type="button" class="btn btn-secondary btn-lg">
+            Sprawdź
+          </button>
         </div>
       </div>
       <!-- TODO: adding animation -->
@@ -117,13 +174,18 @@
           <ul class="footer__list">
             <li class="footer__link">FAQ</li>
             <li>O nas</li>
-            <li>Kontakt</li>
+            <li><i class="bi bi-telephone"></i>Kontakt</li>
           </ul>
         </div>
       </div>
       <!-- TODO: add copy icon -->
       <h6 class="copy">Copyright &copy</h6>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
