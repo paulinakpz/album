@@ -75,10 +75,16 @@ nav {
   position: relative;
 }
 .icon {
-  position: absolute;
-  left: -24px;
-  width: 1em;
-  height: 1em;
+  display: none;
+}
+@media screen and (min-width: 1056px) {
+  .icon {
+    display: block;
+    position: absolute;
+    left: -1.2em;
+    width: 1em;
+    height: 1em;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__item {
@@ -288,7 +294,9 @@ footer {
 }
 .footer__link {
   font-size: 1em;
+  position: relative;
 }
+
 .copy {
   display: block;
   text-align: right;
