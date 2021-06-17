@@ -77,6 +77,8 @@ nav {
 .icon {
   position: absolute;
   left: -24px;
+  width: 1em;
+  height: 1em;
 }
 @media screen and (min-width: 768px) {
   .menu__item {
