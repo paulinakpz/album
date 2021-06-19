@@ -245,11 +245,27 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .parallax {
     min-height: 60vh;
   }
+}
+.see-more {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  border: 0;
+  padding: .5em;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .baner-container {
   display: flex;
