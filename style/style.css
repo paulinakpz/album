@@ -162,6 +162,11 @@ h4 {
     justify-content: space-around;
   }
 }
+.product-container:hover {
+  transition: all .2s linear ;
+  transform: scale(1.05);
+  opacity: 0.9;
+}
 .product-container__product {
   margin-bottom: 3em;
   display: flex;
